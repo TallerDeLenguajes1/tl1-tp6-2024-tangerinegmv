@@ -19,3 +19,46 @@ if(num != 0){
     }
     
     }
+
+/*CALCULADORA ------------*/
+do
+{
+    Console.WriteLine('Elija una operacion:');
+    Console.WriteLine('a. Suma');
+    Console.WriteLine('b. Resta');
+    Console.WriteLine('c. Multiplicar');
+    Console.WriteLine('d. Dividir');
+    Console.WriteLine('e. Salir');
+    string opcion = Console.ReadLine();
+
+    bool salir = true;
+    Console.WriteLine('Ingrese el primer numero:');
+
+    int a = int.TryParse(Console.ReadLine(), out a)
+
+    Console.WriteLine('Ingrese el segundo numero:');
+    int b = int.TryParse(Console.ReadLine(), out b);
+
+    switch (opcion)
+    {
+    case 'a':
+        Console.WriteLine(a+b);
+        break;
+    case 'b':
+        Console.WriteLine(a-b);
+        break;
+    case 'c':
+        Console.WriteLine(a*b);
+        break;
+    case 'd':
+        Console.WriteLine(a/b);
+        break;
+
+        default:
+            salir = false;
+            break;
+    }
+   
+
+
+} while (salir);
